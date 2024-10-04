@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Graphical Authentication</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .navbar {
+            background-color: #ff5722;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+        }
+
+        .dashboard-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card a {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #ffeb3b;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .logout-btn {
+            padding: 12px 30px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #d32f2f;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact Us</a>
+        <button class="logout-btn" onclick="location.href='login.html'">Logout</button>
+    </div>
+
+    <h1>Welcome to Your Secure Dashboard</h1>
+    <p>You have successfully logged in using graphical password authentication. Explore the features below.</p>
+
+    <!-- Feature Cards Grid -->
+    <div class="dashboard-container">
+        <div class="card">
+            <h3><a href="account-overview.html">Account Overview</a></h3>
+            <p>Manage your personal details and account settings.</p>
+        </div>
+        <div class="card">
+            <h3><a href="security-center.html">Security Center</a></h3>
+            <p>Update your graphical password or configure two-factor authentication.</p>
+        </div>
+        <div class="card">
+            <h3><a href="activity-log.html">Activity Log</a></h3>
+            <p>Review recent login attempts and other activities on your account.</p>
+        </div>
+        <div class="card">
+            <h3><a href="support.html">Support</a></h3>
+            <p>Need help? Contact support for any issues or questions.</p>
+        </div>
+    </div>
+
+</body>
+</html>
